@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zoejiaen.servicedemo" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AtyComByBroadcast"
+            android:label="@string/title_activity_service_by_broadcast" >
+        </activity>
+
+        <service
+            android:name=".DownloadServiceByBroadCast"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".AtyComByFile"
+            android:label="@string/title_activity_aty_service_by_file" >
+        </activity>
+
+        <service
+            android:name=".DownloadServiceByFile"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".AtyComByIBinder"
+            android:label="@string/title_activity_aty_com_by_ibinder" >
+        </activity>
+
+        <service
+            android:name=".DownloadServiceByIBinder"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+    </application>
+
+</manifest>

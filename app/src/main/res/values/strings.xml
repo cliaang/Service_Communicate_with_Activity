@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ServiceDemo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_service_by_broadcast">ServiceByBroadcast</string>
+    <string name="title_activity_aty_service_by_file">AtyServiceByFile</string>
+    <string name="title_activity_aty_com_by_ibinder">AtyComByIBinder</string>
+</resources>
