@@ -59,7 +59,9 @@ public class AtyComByIBinder extends Activity {
             unbindService(mConnection);
             mBound = false;
         }
-        mThread.interrupt();
+        if (mThreak != null){
+            mThread.interrupt();
+        }
     }
 
     public void onClick(View view) {
